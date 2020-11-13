@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FDFDFD"
-    tools:context=".foods.view.DetalheRestauranteActivity">
+    tools:context=".foods.view.DetalhePratoActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -13,7 +12,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:id="@+id/linearImageMenuRestaurante"
@@ -25,49 +24,44 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:id="@+id/imageMenuRestaurante"
+                    android:id="@+id/imgPrato"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:adjustViewBounds="true"
-                    app:srcCompat="@drawable/outback" />
+                    app:srcCompat="@drawable/si" />
 
             </LinearLayout>
 
             <TextView
-                android:id="@+id/txtTituloRestaurante"
+                android:id="@+id/txtTituloPrato"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:text="Tony Roma's"
-                android:textColor="#FDFDFD"
-                android:textSize="36sp"
+                android:layout_marginBottom="6dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="@+id/linearImageMenuRestaurante"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:id="@+id/txtPratosPrincipaisRestaurante"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="34dp"
-                android:text="Pratos principais"
-                android:textColor="#5A6978"
-                android:textSize="36sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearImageMenuRestaurante" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/detalheRestaurante"
+                android:layout_marginTop="30dp"
+                android:id="@+id/txtDescricaoPrato"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
-                app:layout_constraintTop_toBottomOf="@id/txtPratosPrincipaisRestaurante"
-                tools:listitem="@layout/list_prato" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginStart="12dp"
+                android:lineSpacingMultiplier="1.29"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearImageMenuRestaurante"
+                app:layout_constraintVertical_bias="0.0" />
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-

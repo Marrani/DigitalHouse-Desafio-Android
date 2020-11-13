@@ -31,12 +31,12 @@ class ListaRestauranteActivity : AppCompatActivity() {
 
         val customAdapter = CustomAdpter(listRestaurantes) {
             val intent = Intent(this@ListaRestauranteActivity, DetalheRestauranteActivity::class.java)
+            intent.putExtra("IMAGEM", it.imagem.toString())
             intent.putExtra("NOME", it.nome)
 
             startActivity(intent)
         }
 
-        var toast: Toast? = null
         recyclerView.apply {
             setHasFixedSize(true)
 

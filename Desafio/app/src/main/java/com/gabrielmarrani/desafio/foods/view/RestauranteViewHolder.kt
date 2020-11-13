@@ -10,16 +10,22 @@ import com.squareup.picasso.Picasso
 
 class RestauranteViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
 
-    private val imagem = view.findViewById<ImageView>(R.id.listImage)
-    private val nome = view.findViewById<TextView>(R.id.listEndereco)
+    private val img = view.findViewById<ImageView>(R.id.listImage)
+    private val nome = view.findViewById<TextView>(R.id.listNome)
     private val horario = view.findViewById<TextView>(R.id.listHorario)
     private val endereco = view.findViewById<TextView>(R.id.listEndereco)
 
+
     fun bind(restaurante: Restaurante) {
+
 
         nome.text = restaurante.nome
         horario.text = "Fecha às ${restaurante.horario}"
         endereco.text = restaurante.endereco
+
+        Picasso.get()
+            .load(restaurante.imagem)
+            .into(img)
 
     }
 
