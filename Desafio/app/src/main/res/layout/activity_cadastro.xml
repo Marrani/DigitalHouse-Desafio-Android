@@ -9,7 +9,6 @@
     tools:context=".foods.view.CadastroActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtNameCad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/name"
@@ -18,6 +17,7 @@
         app:hintTextColor="#8492A6">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNameCad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -26,7 +26,6 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtEmailCad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -36,6 +35,7 @@
         app:hintTextColor="#8492A6">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmailCad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -45,7 +45,6 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtSenhaCad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -55,6 +54,7 @@
         app:hintTextColor="#8492A6">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtSenhaCad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -63,7 +63,6 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtRepeatSenhaCad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -73,6 +72,7 @@
         app:hintTextColor="#8492A6">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtRepeatSenhaCad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -81,6 +81,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/btnRegistrarCadastro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
