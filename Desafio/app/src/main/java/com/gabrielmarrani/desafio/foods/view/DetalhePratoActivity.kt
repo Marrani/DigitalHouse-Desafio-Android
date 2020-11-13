@@ -13,6 +13,9 @@ class DetalhePratoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalhe_prato)
 
+        val actionbar = supportActionBar
+        actionbar?.setDisplayHomeAsUpEnabled(true)
+
         findViewById<ImageView>(R.id.imgBackPrato).setOnClickListener {
             val intent = Intent(this, ListaRestauranteActivity::class.java)
             startActivity(intent)

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.gabrielmarrani.desafio">
 
     <application
@@ -10,10 +11,11 @@
         <activity android:name=".foods.view.DetalhePratoActivity"></activity>
         <activity android:name=".foods.view.DetalheRestauranteActivity" />
         <activity android:name=".foods.view.ListaRestauranteActivity" />
-        <activity android:name=".foods.view.RestauranteViewHolder" />
+        <activity android:name=".foods.view.RestauranteViewHolder"
+            tools:ignore="Instantiatable" />
         <activity android:name=".ListItemActivity" />
         <activity android:name=".list_item" />
-        <activity android:name=".foods.view.CadastroActivity" android:label="@string/register"/>
+        <activity android:name=".foods.view.CadastroActivity"  android:parentActivityName=".foods.view.MainActivity" android:label="@string/register"/>
         <activity android:name=".foods.view.MainActivity" />
         <activity android:name=".foods.view.SplashActivity" android:theme="@style/AppSplash">
             <intent-filter>

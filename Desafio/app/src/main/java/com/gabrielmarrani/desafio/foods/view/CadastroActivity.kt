@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import com.gabrielmarrani.desafio.R
 import com.google.android.material.textfield.TextInputEditText
 
@@ -12,6 +13,8 @@ class CadastroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro)
+        val actionbar = supportActionBar
+        actionbar?.setDisplayHomeAsUpEnabled(true)
 
         findViewById<Button>(R.id.btnRegistrarCadastro).setOnClickListener {
             val nome = findViewById<TextInputEditText>(R.id.txtNameCad)
