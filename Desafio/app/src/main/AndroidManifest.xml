@@ -13,9 +13,9 @@
         <activity android:name=".foods.view.RestauranteViewHolder" />
         <activity android:name=".ListItemActivity" />
         <activity android:name=".list_item" />
-        <activity android:name=".foods.view.CadastroActivity" />
+        <activity android:name=".foods.view.CadastroActivity" android:label="@string/register"/>
         <activity android:name=".foods.view.MainActivity" />
-        <activity android:name=".foods.view.SplashActivity">
+        <activity android:name=".foods.view.SplashActivity" android:theme="@style/AppSplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,5 +1,6 @@
 package com.gabrielmarrani.desafio.foods.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -11,6 +12,11 @@ class DetalhePratoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalhe_prato)
+
+        findViewById<ImageView>(R.id.imgBackPrato).setOnClickListener {
+            val intent = Intent(this, ListaRestauranteActivity::class.java)
+            startActivity(intent)
+        }
 
 
         val imagem = intent.getStringExtra("IMAGEM")!!.toInt()

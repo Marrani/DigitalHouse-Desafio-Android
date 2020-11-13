@@ -23,6 +23,11 @@ class DetalheRestauranteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalhe_restaurante)
 
+        findViewById<ImageView>(R.id.imgBack).setOnClickListener {
+            val intent = Intent(this, ListaRestauranteActivity::class.java)
+            startActivity(intent)
+        }
+
         listPratos = DataMock.pratos
         listRestaurantes = DataMock.restaurante
         criarLista(listPratos)
